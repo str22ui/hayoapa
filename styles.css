@@ -8,9 +8,9 @@ body {
   margin: 0;
   font-family: 'Quicksand', Arial, sans-serif;
   background-image: url("foto.jpeg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative; /* Tambahkan posisi relatif untuk menggunakan pseudo-elemen */
+  background-size: cover; /* Set the background size to cover */
+  background-position: center center; /* Center the background image */
+  position: relative;
 }
 
 /* Lapisan hitam semi-transparan menggunakan pseudo-elemen ::before */
@@ -129,27 +129,15 @@ button:hover {
   }
 }
 
-/* Ukuran layar di bawah 767px (ponsel) */
+/* Ukuran layar di bawah 767px (ponsel) */ i
 @media (max-width: 767px) {
   body {
     background-size: contain; /* Atur agar gambar berada dalam kotak yang sesuai di layar ponsel */
     background-position: top center; /* Atur posisi latar belakang ke bagian atas */
   }
-  .popup {
-  /* ... Stil pop-up Anda ... */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 25px;
-  background-color: #fff;
-  width: 80%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  opacity: 0; /* Sembunyikan awalnya */
-  pointer-events: none; /* Tidak dapat di-klik saat sembunyi */
-}
+  body::before {
+    background-color: rgba(0, 0, 0, 0.5); /* Nilai alpha (0.5) mengatur transparansi */
+  }
 }
 
 /* Ukuran layar di atas 767px (laptop) */
@@ -157,8 +145,5 @@ button:hover {
   body {
     background-size: cover; /* Atur agar gambar latar belakang mencakup seluruh area layar laptop */
     background-position: center center; /* Atur posisi latar belakang ke tengah-tengah */
-  }
-  .card1{
-
   }
 }
