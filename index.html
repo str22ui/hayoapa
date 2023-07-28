@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Ucapan Ulang Tahun</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulang Tahun Rara</title>
+  <link rel="stylesheet" href="styles.css">
+
+
 </head>
+
 <body>
-    <div class="container">
-        <h1>Selamat Ulang Tahun!</h1>
-        <p>Semoga hari spesial ini penuh kebahagiaan dan berkah.</p>
-        <!-- Tambahkan elemen lain sesuai keinginan -->
+  <div class="container">
+
+    <div class="card card1" id="card1">
+      <div class="content">
+        <p>Play Musiknya dulu</p>
+        <audio src="ultah.mp3" type="audio/mpeg" autoplay controls></audio>
+        <div>
+          <button onclick="nextCard()">Selanjutnya</button>
+        </div>
+       
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <div class="card" id="card2">
+      <h2>Halo, Rara </h2>
+      <p>Hari ini hari spesial kamu nih</p>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+
+    <div class="card" id="card3">
+      <!-- <p>Siapa yang nambah tua?</p> -->
+      <h2>Ada apa ya?</h2>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card4">
+      <p>Oh iya hari ini, ada manusia paling cantik </p>
+      <p>terlahir di dunia 20 tahun lalu</p>
+      <!-- <h2>Raranya aku</h2> -->
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div> 
+
+    <div class="card" id="card5">
+      <p>Siapa yang nambah tua?</p>
+      <h2>Raranya aku</h2>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card6">
+      <p>Semoga di hari yang spesial ini</p>
+      <p>Kamu dapat menjadi pribadi yang lebih baik ya, bub</p>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card7">
+      <h2>Happy <span>Birthday!</span></h2>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card8">
+      <h2>Selamat Ulang Tahun, Perempuan<span>ku</span></h2>
+      <p>Terima kasih telah menjadi bagian terbaik dari perjalananku </p>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card9">
+      <h2>Happy Level Up <span>Day</span> &#128522; &#128151;</h2>
+      <p>Best wishes and lots of love from your bf.</p>
+      <button onclick="nextCard()">Selanjutnya</button>
+    </div>
+
+    <div class="card" id="card10">
+      <div class="emoticons">
+        <!-- Tambahkan emotikon yang diinginkan di sini -->
+        <span>&#127874;</span> <!-- Emotikon kue (🎂) -->
+        <span>&#128151;</span> <!-- Emotikon love (💗) -->
+        <span>&#127881;</span> <!-- Emotikon balon (🎈) -->
+      </div>
+      <h2>Selamat Ulang Tahun!</h2>
+      <p>Terima kasih manusia cantik telah terlahir dunia! Love u <3 </p>
+    </div>
+
+    
+
+  <script src="script.js"></script>
 </body>
+
 </html>
